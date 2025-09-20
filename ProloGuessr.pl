@@ -9,8 +9,8 @@ listar(Atributos):-
             Paises),
 
     ( Paises = []
-    -> write('Nenhum país correspondente.'), nl
-    ;  write('Países possíveis:'), nl,
+    -> write('Nenhum paÃ­s correspondente.'), nl
+    ;  write('PaÃ­ses possÃ­veis:'), nl,
        forall(member(Pais, Paises), (
            write(Pais), nl
        ))
@@ -30,7 +30,7 @@ iniciar_jogo :-
     asserta(pais_correto(Correto)),
     retractall(dicas_dadas(_)),
     assertz(dicas_dadas(0)),
-    write('Jogo iniciado! Tente adivinhar o país.'), nl.
+    write('Jogo iniciado! Tente adivinhar o paÃ­s.'), nl.
 
 e_numerico(graus(_)).
 e_numerico(populacao(_)).
@@ -48,20 +48,20 @@ verificar_palpite(Palpite) :-
     member(graus(TempPalpite), AtributosPalpite),
     member(graus(TempCorreta), AtributosCorreta),
     (   TempPalpite == TempCorreta
-    ->  write('-> Temperatura: Você acertou a temperatura!')
+    ->  write('-> Temperatura: VocÃª acertou a temperatura!')
     ;   TempPalpite < TempCorreta
-    ->  write('-> Temperatura: A do país correto é MAIOR.')
-    ;   write('-> Temperatura: A do país correto é MENOR.')
+    ->  write('-> Temperatura: A do paÃ­s correto Ã© MAIOR.')
+    ;   write('-> Temperatura: A do paÃ­s correto Ã© MENOR.')
     ),
     nl,
 
     member(populacao(PopPalpite), AtributosPalpite),
     member(populacao(PopCorreta), AtributosCorreta),
     (   PopPalpite == PopCorreta
-    ->  write('-> População: Você acertou a população!')
+    ->  write('-> PopulaÃ§Ã£o: VocÃª acertou a populaÃ§Ã£o!')
     ;   PopPalpite < PopCorreta
-    ->  write('-> População: A do país correto é MAIOR.')
-    ;   write('-> População: A do país correto é MENOR.')
+    ->  write('-> PopulaÃ§Ã£o: A do paÃ­s correto Ã© MAIOR.')
+    ;   write('-> PopulaÃ§Ã£o: A do paÃ­s correto Ã© MENOR.')
     ),
     nl.
 
@@ -74,23 +74,23 @@ loop_palpites :-
     read(Palpite),
     pais_correto(Correto),
     (   Palpite == Correto
-    ->  write('Parabéns! Você acertou! O país era '), write(Correto), nl
+    ->  write('ParabÃ©ns! VocÃª acertou! O paÃ­s era '), write(Correto), nl
     ;   (    Palpite == 'desisto')
-        ->  write('Você desistiu! O país era '), write(Correto), nl
+        ->  write('VocÃª desistiu! O paÃ­s era '), write(Correto), nl
     ;   (    Palpite == 'capital')
         -> capital(CapCorreto, Correto),
-           write('A capital do país é '), write(CapCorreto), nl,
+           write('A capital do paÃ­s Ã© '), write(CapCorreto), nl,
            loop_palpites
     ;   (    Palpite == 'dica')
-        -> write('Dica: '), dica, nl,
+        ->  dica, nl,
            loop_palpites
     ;   (   \+ pais(Palpite, _)
-        ->  write('Esse país não está no meu banco de dados. Tente outro.'), nl,
+        ->  write('Esse paÃ­s nÃ£o estÃ¡ no meu banco de dados. Tente outro.'), nl,
             loop_palpites
         ;   verificar_palpite(Palpite),
             loop_palpites
-        )
-    ).
+Â Â Â Â Â Â Â Â )
+Â Â Â Â ).
 
 dica :-
     pais_correto(Correto),
@@ -110,7 +110,7 @@ dica :-
         print_sublinhados(Resto)
     ;
         Chars = [Primeira, Segunda, Terceira | Resto],
-        format('Número máximo de dicas atingido: ~w~w~w', [Primeira, Segunda, Terceira]),
+        format('NÃºmero mÃ¡ximo de dicas atingido: ~w~w~w', [Primeira, Segunda, Terceira]),
         print_sublinhados(Resto)
     ),
     N1 is N + 1,
@@ -121,3 +121,4 @@ print_sublinhados([]) :- nl.
 print_sublinhados([_|Resto]) :-
     write(' _'),
     print_sublinhados(Resto).
+
