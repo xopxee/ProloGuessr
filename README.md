@@ -83,8 +83,8 @@ Antes de começar, você precisa ter um interpretador PROLOG instalado. Recomend
 
 ## 👨‍💻 Autores
 
-  - **Jorge Alberto** - github.com/xopxee
-  - **Bruno Costa** - github.com/brunocostaar
+  - **Jorge Alberto** - https://github.com/xopxee
+  - **Bruno Costa** - https://github.com/brunocostaar
   - **Arthur Moreira** - https://github.com/arthurmoreirat
 
 ## 📄 Licença
