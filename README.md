@@ -53,7 +53,7 @@ Antes de começar, você precisa ter um interpretador PROLOG instalado. Recomend
 4.  **Consulte (carregue) o arquivo do projeto:**
 
     ```prolog
-    ?- consult('prologuessr.pl').
+    ?- consult('ProloGuessr3.pl').
     ```
 
 5.  **Inicie o jogo:**
@@ -70,21 +70,22 @@ Antes de começar, você precisa ter um interpretador PROLOG instalado. Recomend
       - `Atributos em comum`: Mostra as características que o seu palpite e o país secreto compartilham.
       - `Temperatura` e `População`: Indicam se os valores do país secreto são `MAIOR` ou `MENOR`.
 4.  Continue fazendo palpites até acertar.
-5.  Se quiser desistir, digite `desisto.`
+5.  Se precisar de uma dica, digite `capital.` e o jogo mostrará a Capital do país a ser adivinhado.
+6.  Se quiser desistir, digite `desisto.`
 
 ## 📁 Estrutura do Código
 
-  - `pais/2`: Fatos que compõem a base de conhecimento. Cada fato define um país e sua lista de atributos.
-  - `iniciar_jogo/0`: Predicado que inicializa o jogo, escolhendo um país aleatório e armazenando-o dinamicamente.
-  - `verificar_palpite/1`: O núcleo lógico do jogo. Compara o palpite do usuário com a resposta correta e gera as dicas.
-  - `jogo/0` e `loop_palpites/0`: Controlam o fluxo principal e o loop de interação com o jogador.
-  - `advinhar/1`: Predicado utilitário para realizar consultas diretas à base de conhecimento.
+  - `pais`: Fatos que compõem a base de conhecimento. Cada fato define um país e sua lista de atributos.
+  - `iniciar_jogo`: Predicado que inicializa o jogo, escolhendo um país aleatório e armazenando-o dinamicamente.
+  - `verificar_palpite`: O núcleo lógico do jogo. Compara o palpite do usuário com a resposta correta e gera as dicas.
+  - `jogo` e `loop_palpites`: Controlam o fluxo principal e o loop de interação com o jogador.
+  - `advinhar`: Predicado utilitário para realizar consultas diretas à base de conhecimento.
 
 ## 👨‍💻 Autores
 
   - **Jorge Alberto** - github.com/xopxee
   - **Bruno Costa** - github.com/brunocostaar
-  - **Arthur Moreira** - github.com/xopxee
+  - **Arthur Moreira** - https://github.com/arthurmoreirat
 
 ## 📄 Licença
 
