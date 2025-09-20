@@ -53,7 +53,7 @@ Antes de começar, você precisa ter um interpretador PROLOG instalado. Recomend
 4.  **Consulte (carregue) o arquivo do projeto:**
 
     ```prolog
-    ?- consult('ProloGuessr3.pl').
+    ?- consult('ProloGuessr.pl').
     ```
 
 5.  **Inicie o jogo:**
