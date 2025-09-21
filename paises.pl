@@ -90,11 +90,9 @@ pais(austria, [hemisferio_norte, europa, alemao, graus(8), populacao(9.1)]).
 pais(eslovaquia, [hemisferio_norte, europa, eslovaco, graus(9), populacao(5.4)]).
 pais(eslovenia, [hemisferio_norte, europa, esloveno, graus(10), populacao(2.1)]).
 pais(republica_tcheca, [hemisferio_norte, europa, tcheco, graus(8), populacao(10.7)]).
-
 pais(estonia, [hemisferio_norte, europa, estoniano, graus(6), populacao(1.3)]).
 pais(lituania, [hemisferio_norte, europa, lituano, graus(7), populacao(2.7)]).
 pais(letonia, [hemisferio_norte, europa, letao, graus(6), populacao(1.9)]).
-
 pais(quirguistao, [hemisferio_norte, asia, quirguiz, russo, graus(5), populacao(6.7)]).
 pais(cuba, [hemisferio_norte, america_central, espanhol, graus(25), populacao(11.3)]).
 pais(honduras, [hemisferio_norte, america_central, espanhol, graus(25), populacao(10.1)]).
@@ -160,3 +158,4 @@ pais(libano,[hemisferio_norte,asia,arabe,graus(20),populacao(6.8)]).
 pais(tajiquistao,[hemisferio_norte,asia,tajique,graus(8),populacao(9.8)]).
 pais(turcomenistao,[hemisferio_norte,asia,turcomeno,graus(15),populacao(6.3)]).
 pais(palestina,[hemisferio_norte,asia,arabe,graus(20),populacao(5.4)]).
+
