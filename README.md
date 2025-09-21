@@ -50,10 +50,12 @@ Antes de começar, você precisa ter um interpretador PROLOG instalado. Recomend
     swipl
     ```
 
-4.  **Consulte (carregue) o arquivo do projeto:**
+4.  **Consulte (carregue) os arquivos do projeto:**
 
     ```prolog
     ?- consult('ProloGuessr.pl').
+    ?- consult('paises.pl').
+    ?- consult('capitais.pl').
     ```
 
 5.  **Inicie o jogo:**
