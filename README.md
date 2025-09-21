@@ -79,7 +79,7 @@ Antes de começar, você precisa ter um interpretador PROLOG instalado. Recomend
   - `iniciar_jogo`: Predicado que inicializa o jogo, escolhendo um país aleatório e armazenando-o dinamicamente.
   - `verificar_palpite`: O núcleo lógico do jogo. Compara o palpite do usuário com a resposta correta e gera as dicas.
   - `jogo` e `loop_palpites`: Controlam o fluxo principal e o loop de interação com o jogador.
-  - `advinhar`: Predicado utilitário para realizar consultas diretas à base de conhecimento.
+  - `listar`: Predicado utilitário para realizar consultas diretas à base de conhecimento.
 
 ## 👨‍💻 Autores
 
