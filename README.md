@@ -71,7 +71,7 @@ Antes de começar, você precisa ter um interpretador PROLOG instalado. Recomend
       - `Temperatura` e `População`: Indicam se os valores do país secreto são `MAIOR` ou `MENOR`.
 4.  Continue fazendo palpites até acertar.
 5.  Se precisar de uma dica, digite `capital.` e o jogo mostrará a Capital do país a ser adivinhado.
-6.  Se precisar de uma dica, digite `linguas.` e o jogo mostrará as Línguas do país a ser adivinhado.
+6.  Se precisar de outra dica, digite `linguas.` e o jogo mostrará as Línguas do país a ser adivinhado.
 7.  Se precisar de mais dicas, digite `dica.`, e o jogo revelará uma letra do nome do País a ser advinhado (O limite de dicas é 3).
 8.  Se quiser desistir, digite `desisto.`
 
