@@ -54,8 +54,6 @@ Antes de começar, você precisa ter um interpretador PROLOG instalado. Recomend
 
     ```prolog
     ?- consult('ProloGuessr.pl').
-    ?- consult('paises.pl').
-    ?- consult('capitais.pl').
     ```
 
 5.  **Inicie o jogo:**
